@@ -68,62 +68,67 @@ export default function HomePage() {
       </header>
 
       <section id="inicio" className="hero">
-        <div className="container hero-grid">
-          <div>
-            <span className="eyebrow">Estrategia de Personas para empresas en crecimiento</span>
-            <h1>
-              Personas, liderazgo y estructura para crecer con más claridad.
-            </h1>
-            <p className="hero-text">
-              En TF Talent acompañamos a organizaciones que necesitan profesionalizar
-              su gestión de personas sin perder agilidad. Diseñamos soluciones de
-              talento concretas, cercanas y alineadas con el negocio.
+        <div className="container hero-stack">
+          <span className="eyebrow">Estrategia de Personas para empresas en crecimiento</span>
+
+          <div className="hero-copy">
+            <h1>Personas, liderazgo y estructura para crecer con más claridad.</h1>
+
+            <p className="hero-lead">
+              En TF Talent acompañamos a organizaciones que necesitan profesionalizar su gestión
+              de personas sin perder agilidad. Diseñamos soluciones de talento concretas,
+              estratégicas y bien implementadas.
             </p>
-            <p className="hero-text">
-              Trabajamos en evaluación de desempeño, planes de carrera, sucesión,
-              liderazgo y acompañamiento estratégico de RRHH para ayudar a que el
-              crecimiento sea sostenible también desde las personas.
+
+            <p className="hero-support">
+              Evaluación de desempeño, planes de carrera, sucesión, liderazgo y acompañamiento
+              estratégico de RRHH para empresas que están en etapa de crecimiento y necesitan
+              más orden, más criterio y mejores decisiones de personas.
             </p>
-            <div className="hero-actions">
-              <a href="#contacto" className="button button-primary">Conversemos</a>
-              <a href="#servicios" className="button button-secondary">Ver servicios</a>
-            </div>
           </div>
 
-          <div className="hero-panel">
-            <div className="metric-card">
-              <p className="metric-title">Enfoque</p>
-              <h3>Consultoría estratégica, práctica y cercana</h3>
-              <p>
-                Diseñamos procesos de personas que se pueden implementar de verdad y
-                sostener en el tiempo.
-              </p>
-            </div>
-            <div className="mini-grid">
-              <div className="mini-card">
-                <strong>Desempeño</strong>
-                <span>Claridad y conversaciones útiles</span>
-              </div>
-              <div className="mini-card">
-                <strong>Liderazgo</strong>
-                <span>Equipos mejor acompañados</span>
-              </div>
-            </div>
+          <div className="hero-actions">
+            <a href="#contacto" className="button button-primary">Conversemos</a>
+            <a href="#servicios" className="button button-secondary">Ver servicios</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section intro-strip">
+        <div className="container intro-grid">
+          <div className="intro-card intro-card-highlight">
+            <span className="intro-label">Enfoque</span>
+            <p>
+              Consultoría estratégica de personas con mirada de negocio, implementación práctica
+              y soluciones que la empresa puede sostener en el tiempo.
+            </p>
+          </div>
+
+          <div className="intro-card">
+            <span className="intro-number">01</span>
+            <p>Procesos de talento más claros y aplicables.</p>
+          </div>
+
+          <div className="intro-card">
+            <span className="intro-number">02</span>
+            <p>Liderazgos mejor preparados para acompañar equipos.</p>
           </div>
         </div>
       </section>
 
       <section id="servicios" className="section">
-        <div className="container">
+        <div className="container narrow">
           <div className="section-heading">
             <span className="eyebrow">Servicios</span>
             <h2>Acompañamiento estratégico en gestión de personas</h2>
             <p>
-              Trabajamos con empresas que necesitan ordenar, fortalecer o profesionalizar
-              su gestión de talento. Cada proyecto se adapta al momento y realidad de la organización.
+              Trabajamos con empresas que necesitan ordenar, fortalecer o profesionalizar su
+              gestión de talento. Cada proyecto se adapta al momento y realidad de la organización.
             </p>
           </div>
+        </div>
 
+        <div className="container">
           <div className="services-grid">
             {services.map((service) => (
               <article className="service-card" key={service.title}>
@@ -135,9 +140,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="metodologia" className="section section-alt">
-        <div className="container methodology-grid">
-          <div className="section-heading sticky-heading">
+      <section id="metodologia" className="section section-soft">
+        <div className="container">
+          <div className="section-heading narrow">
             <span className="eyebrow">Metodología</span>
             <h2>Un enfoque riguroso, pero aterrizado a la realidad de cada empresa</h2>
             <p>
@@ -146,14 +151,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="process-list">
+          <div className="process-grid">
             {process.map((item) => (
               <article className="process-card" key={item.step}>
                 <div className="process-step">{item.step}</div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </article>
             ))}
           </div>
@@ -162,10 +165,11 @@ export default function HomePage() {
 
       <section id="sobre" className="section">
         <div className="container about-box">
-          <div>
+          <div className="about-heading">
             <span className="eyebrow">Sobre TF Talent</span>
             <h2>Una consultora enfocada en crecimiento, personas y decisiones con criterio</h2>
           </div>
+
           <div className="about-copy">
             <p>
               TF Talent nace para acompañar a empresas que ya entienden que crecer no depende
