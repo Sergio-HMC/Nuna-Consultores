@@ -1,7 +1,9 @@
 export default function Footer(){
   return(
     <footer className="footer">
-      <p>Numa Consultores</p>
+      <div className="footer-inner">
+        <p>Numa Consultores</p>
+      </div>
     </footer>
   )
 }
