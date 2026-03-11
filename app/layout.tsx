@@ -1,4 +1,3 @@
-
 import '../styles/globals.css'
 
 export const metadata = {
@@ -6,7 +5,7 @@ export const metadata = {
   description: 'Consultora de talento y organización'
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
       <body>{children}</body>
