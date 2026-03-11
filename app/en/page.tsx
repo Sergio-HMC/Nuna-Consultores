@@ -10,13 +10,11 @@ export default function Home() {
         <div className="hero-inner">
           <div className="eyebrow">Talent and Organization Strategies</div>
           <h1>Talent and Organization Strategies para empresas en crecimiento</h1>
-
           <div className="hero-copy">
-            <p>En NUMA creemos en el potencial de las empresas en crecimiento para impulsar el desarrollo del país.</p>
-            <p>Ayudamos a profesionalizar la gestión de talento en pequeñas y medianas empresas, implementando prácticas de compensaciones, liderazgo y cultura organizacional, para que crezcan con profesionalismo, equidad y tecnología.</p>
-            <p>Somos una consultora especializada que fusiona lo mejor de la tecnología y la inteligencia artificial con la experiencia de consultores senior, para entregar las mejores soluciones estratégicas con un acompañamiento cercano, práctico y experto.</p>
+            <p>At NUMA, we believe in the potential of growing companies to drive the country’s development.</p>
+            <p>We help small and medium-sized companies professionalize talent management by implementing compensation, leadership, and organizational culture practices so they can grow with professionalism, equity, and technology.</p>
+            <p>We are a specialized consulting firm that combines the best of technology and artificial intelligence with the experience of senior consultants to deliver the best strategic solutions with close, practical, and expert support.</p>
           </div>
-
           <div className="hero-actions">
             <a className="cta" href="#contacto">Contact us</a>
             <a className="cta secondary" href="#servicios">See services</a>
@@ -25,11 +23,7 @@ export default function Home() {
       </section>
 
       <section id="servicios" className="section">
-        <div className="section-head">
-          <span className="section-kicker">Services</span>
-          <h2>Services</h2>
-        </div>
-
+        <div className="section-head"><span className="section-kicker">Services</span><h2>Services</h2></div>
         <div className="services">
           <div className="card blue"><h3>Compensaciones y estructura</h3><p>Compensaciones y estructura: Diseñamos bandas salariales, políticas y modelos de incentivos alineados a mercado y capacidad financiera.</p><p>Deliverable: matriz de compensaciones y guía de implementación.</p></div>
           <div className="card teal"><h3>Planes de sucesión</h3><p>Planes de sucesión: diseño e implementación de rutas de sucesión y desarrollo de talento clave (mapa de roles críticos, evaluaciones de potencial, planes de desarrollo individual y cronograma de transición) para asegurar continuidad operativa y menor riesgo en momentos de cambio.</p></div>
@@ -44,11 +38,7 @@ export default function Home() {
       </section>
 
       <section id="metodologia" className="section methodology">
-        <div className="section-head">
-          <span className="section-kicker">How we work</span>
-          <h2>Methodology</h2>
-        </div>
-
+        <div className="section-head"><span className="section-kicker">How we work</span><h2>Methodology</h2></div>
         <div className="content-block dark">
           <p>En NUMA trabajamos con una metodología diseñada para empresas en crecimiento: rigurosa en el diagnóstico, simple en la implementación y enfocada en resultados concretos.</p>
           <p>Combinamos buenas prácticas de gestión de personas con tecnología e inteligencia artificial para diseñar soluciones que realmente se puedan implementar en la realidad de las PYMEs.</p>
@@ -61,11 +51,7 @@ export default function Home() {
       </section>
 
       <section id="nosotros" className="section">
-        <div className="section-head">
-          <span className="section-kicker">About us</span>
-          <h2>About us</h2>
-        </div>
-
+        <div className="section-head"><span className="section-kicker">About us</span><h2>About us</h2></div>
         <div className="content-block soft">
           <p>Si tu empresa está creciendo, expandiéndose o quiere profesionalizar su gestión de personas, en NUMA ayudamos a traducir buenas prácticas en soluciones concretas, adaptadas al tamaño, recursos y ritmo de crecimiento.</p>
           <p>Diseñamos herramientas simples de implementar, informes accionables y formación práctica para que los cambios se traduzcan en resultados desde el primer día.</p>
@@ -74,16 +60,31 @@ export default function Home() {
           <h3>Tamara Hernandez</h3>
           <p>PhD (c) in Management | Ingeniero Comercial y Fundadora de Más Líder.</p>
         </div>
+
+        <div className="team-option">
+          <div className="section-head alt"><span className="section-kicker">Option 2</span><h2>About us · version with profiles</h2></div>
+          <div className="team-grid">
+            <article className="profile-card">
+              <img src="/francisca-avatar.png" alt="Avatar of Francisca Puentes" className="profile-image" />
+              <div className="profile-copy">
+                <h3>Francisca Puentes</h3>
+                <p>MSc en Recursos Humanos (Inglaterra), Psicóloga Organizacional y Postítulo en Management Estratégico con más 14 años liderando áreas de recursos humanos con foco tanto en compensaciones, estructura, relaciones laborales, negociaciones sindicales, como en procesos de transformación digital, gestión de talento y desarrollo organizacional a nivel regional (Argentina, Brasil, Chile, Colombia, Perú, México), en sectores industriales, consumo masivo, retail y servicios financieros.</p>
+              </div>
+            </article>
+            <article className="profile-card reverse">
+              <img src="/tamara-avatar.png" alt="Avatar of Tamara Hernandez" className="profile-image" />
+              <div className="profile-copy">
+                <h3>Tamara Hernandez</h3>
+                <p>PhD (c) in Management | Ingeniero Comercial y Fundadora de Más Líder.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="contacto" className="section contact">
-        <div className="section-head">
-          <span className="section-kicker">Contact</span>
-          <h2>Contact</h2>
-        </div>
-
+        <div className="section-head"><span className="section-kicker">Contact</span><h2>Contact</h2></div>
         <p className="contact-copy">Contact us: ponemos formulario donde preguntamos nombre, empresa, cargo y espacio para escribir.</p>
-
         <form className="form">
           <input placeholder="Name"/>
           <input placeholder="Company"/>
